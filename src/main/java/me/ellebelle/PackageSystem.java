@@ -9,7 +9,7 @@ public class PackageSystem {
 
 
         // ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        while (parcelCount < 10) {
+        while (parcelCount < parcels.length) {
             // Här vill jag registrera paket och deras dimensioner.
             int width = Integer.parseInt(IO.readln("Please enter the width of the box:"));
             int height = Integer.parseInt(IO.readln("Please enter the height of the box:"));
@@ -56,6 +56,8 @@ public class PackageSystem {
             // shippingInfo.box();
             // få tillgång till kostnaden att skeppa dethär:
             // shippingInfo.shippingPrice();
+
+            // Stoppa in hela parcel i arrayen.
             parcels[parcelCount++] = parcel;
 
 
